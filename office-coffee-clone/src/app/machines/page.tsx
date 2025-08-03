@@ -214,4 +214,8 @@ export default function MachinesPage() {
       </section>
     </Layout>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f2cea54a5047e6952e952bef9c0068d6090317c1

@@ -80,6 +80,7 @@ const aboutMenuItems = [
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
+<<<<<<< HEAD
   const [megaMenuHeight, setMegaMenuHeight] = useState(0);
   const menuTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const gracePeriodRef = useRef<NodeJS.Timeout | null>(null);
@@ -108,12 +109,21 @@ export default function Header() {
     if (gracePeriodRef.current) {
       clearTimeout(gracePeriodRef.current);
     }
+=======
+  const menuTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMegaMenuEnter = (menu: string) => {
+    if (menuTimeoutRef.current) {
+      clearTimeout(menuTimeoutRef.current);
+    }
+>>>>>>> f2cea54a5047e6952e952bef9c0068d6090317c1
     setActiveMegaMenu(menu);
   };
 
   const handleMegaMenuLeave = () => {
     menuTimeoutRef.current = setTimeout(() => {
       setActiveMegaMenu(null);
+<<<<<<< HEAD
     }, 150);
   };
 
@@ -131,6 +141,11 @@ export default function Header() {
     }
   };
 
+=======
+    }, 150); // Short delay for better UX
+  };
+
+>>>>>>> f2cea54a5047e6952e952bef9c0068d6090317c1
   const MegaMenuCard = ({ item }: { item: typeof machinesMenuItems[0] }) => (
     <Link href={item.link} className="group block">
       <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1">
@@ -169,8 +184,12 @@ export default function Header() {
 
   const MegaMenu = ({ items, isActive, title }: { items: typeof machinesMenuItems; isActive: boolean; title: string }) => (
     <div 
+<<<<<<< HEAD
       ref={megaMenuRef}
       className={`fixed top-20 left-0 right-0 w-full bg-white/95 backdrop-blur-lg border-t-4 border-green-600 shadow-2xl transform transition-all duration-300 ease-out z-50 ${
+=======
+      className={`absolute top-full left-0 w-screen bg-white/95 backdrop-blur-lg border-t-4 border-green-600 shadow-2xl transform transition-all duration-300 ease-out z-50 ${
+>>>>>>> f2cea54a5047e6952e952bef9c0068d6090317c1
         isActive 
           ? 'opacity-100 translate-y-0 pointer-events-auto' 
           : 'opacity-0 -translate-y-4 pointer-events-none'
@@ -207,7 +226,11 @@ export default function Header() {
   );
 
   return (
+<<<<<<< HEAD
     <header className="bg-white/95 backdrop-blur-lg border-b border-gray-100 sticky top-0 z-50">
+=======
+    <header className="bg-white/95 backdrop-blur-lg border-b border-gray-100 sticky top-0 z-40">
+>>>>>>> f2cea54a5047e6952e952bef9c0068d6090317c1
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -223,11 +246,16 @@ export default function Header() {
           <nav className="hidden lg:flex items-center space-x-8">
             <div 
               className="relative"
+<<<<<<< HEAD
               onMouseEnter={() => {
                 handleNavEnter();
                 handleMegaMenuEnter('machines');
               }}
               onMouseLeave={handleNavLeave}
+=======
+              onMouseEnter={() => handleMegaMenuEnter('machines')}
+              onMouseLeave={handleMegaMenuLeave}
+>>>>>>> f2cea54a5047e6952e952bef9c0068d6090317c1
             >
               <Link
                 href="/machines"
@@ -245,11 +273,16 @@ export default function Header() {
 
             <div 
               className="relative"
+<<<<<<< HEAD
               onMouseEnter={() => {
                 handleNavEnter();
                 handleMegaMenuEnter('coffee');
               }}
               onMouseLeave={handleNavLeave}
+=======
+              onMouseEnter={() => handleMegaMenuEnter('coffee')}
+              onMouseLeave={handleMegaMenuLeave}
+>>>>>>> f2cea54a5047e6952e952bef9c0068d6090317c1
             >
               <Link
                 href="/coffee"
@@ -267,11 +300,16 @@ export default function Header() {
 
             <div 
               className="relative"
+<<<<<<< HEAD
               onMouseEnter={() => {
                 handleNavEnter();
                 handleMegaMenuEnter('about');
               }}
               onMouseLeave={handleNavLeave}
+=======
+              onMouseEnter={() => handleMegaMenuEnter('about')}
+              onMouseLeave={handleMegaMenuLeave}
+>>>>>>> f2cea54a5047e6952e952bef9c0068d6090317c1
             >
               <Link
                 href="/about"
