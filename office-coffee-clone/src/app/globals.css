@@ -185,3 +185,18 @@
   visibility: visible;
   transform: translateY(0);
 }
+
+/* Hero section adjustment for mega menu */
+.hero-section-with-margin {
+  margin-top: calc(70px + var(--mega-menu-height, 0px));
+  transition: margin-top 0.3s ease;
+}
+
+/* Ensure smooth transitions for content push */
+main {
+  transition: margin-top 0.3s ease;
+}
+
+main.mega-menu-active {
+  margin-top: var(--mega-menu-height, 0px);
+}
