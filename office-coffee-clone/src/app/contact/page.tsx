@@ -79,12 +79,12 @@ export default function ContactPage() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-24 bg-amber-900 text-white">
+      <section className="py-24 bg-green-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Get in Touch
           </h1>
-          <p className="text-xl md:text-2xl text-amber-100 mb-8">
+          <p className="text-xl md:text-2xl text-green-100 mb-8">
             Ready to transform your workplace with exceptional coffee? We're here to help.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function ContactPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-4">
               How Can We Help?
             </h2>
             <p className="text-xl text-gray-700">
@@ -108,7 +108,7 @@ export default function ContactPage() {
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <method.icon className="h-8 w-8 text-green-600" />
                 </div>
-                <h3 className="text-xl font-bold text-amber-900 mb-3">
+                <h3 className="text-xl font-bold text-green-800 mb-3">
                   {method.title}
                 </h3>
                 <p className="text-gray-600 mb-3">
@@ -127,10 +127,10 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form */}
-      <section className="py-16 bg-stone-50">
+      <section className="py-16 bg-green-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-4">
               Send Us a Message
             </h2>
             <p className="text-xl text-gray-700">
@@ -244,7 +244,7 @@ export default function ContactPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-4">
               Our Locations
             </h2>
             <p className="text-xl text-gray-700">
@@ -255,7 +255,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {offices.map((office, index) => (
               <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold text-amber-900 mb-2">
+                <h3 className="text-xl font-bold text-green-800 mb-2">
                   {office.name}
                 </h3>
                 <h4 className="text-lg font-semibold text-gray-700 mb-4">
@@ -286,7 +286,7 @@ export default function ContactPage() {
 
                 <Button
                   variant="outline"
-                  className="w-full text-amber-800 border-amber-800 hover:bg-amber-800 hover:text-white"
+                  className="w-full text-green-800 border-green-800 hover:bg-green-800 hover:text-white"
                 >
                   View Details
                 </Button>
@@ -297,9 +297,9 @@ export default function ContactPage() {
       </section>
 
       {/* Emergency Support */}
-      <section className="py-16 bg-amber-50">
+      <section className="py-16 bg-green-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">
             Need Emergency Support?
           </h2>
           <p className="text-xl text-gray-700 mb-8">
@@ -309,7 +309,7 @@ export default function ContactPage() {
             <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3">
               Emergency Support
             </Button>
-            <Button size="lg" variant="outline" className="text-amber-800 border-amber-800 hover:bg-amber-800 hover:text-white px-8 py-3">
+            <Button size="lg" variant="outline" className="text-green-800 border-green-800 hover:bg-green-800 hover:text-white px-8 py-3">
               Schedule Maintenance
             </Button>
           </div>

@@ -101,10 +101,10 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
-            <span className="text-amber-800 font-medium text-sm uppercase tracking-wide">
+            <span className="text-green-800 font-medium text-sm uppercase tracking-wide">
               How we work
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mt-2 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-green-800 mt-2 mb-6">
               A love of coffee and our planet for the perfect blend
             </h2>
             <p className="text-xl text-gray-700">
@@ -115,18 +115,18 @@ export default function AboutPage() {
       </section>
 
       {/* Process Steps */}
-      <section className="py-16 bg-stone-50">
+      <section className="py-16 bg-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-16">
             {processSteps.map((step, index) => (
               <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}>
                 <div className="flex-1">
                   <div className="mb-6">
-                    <span className="text-6xl font-bold text-amber-900 opacity-20">
+                    <span className="text-6xl font-bold text-green-800 opacity-20">
                       {step.number}
                     </span>
                   </div>
-                  <h3 className="text-3xl font-bold text-amber-900 mb-2">
+                  <h3 className="text-3xl font-bold text-green-800 mb-2">
                     {step.title}
                   </h3>
                   <h4 className="text-xl font-semibold text-gray-700 mb-4">
@@ -155,7 +155,7 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">
               Our commitment to you
             </h2>
           </div>
@@ -165,7 +165,7 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🌱</span>
               </div>
-              <h3 className="text-xl font-bold text-amber-900 mb-3">
+              <h3 className="text-xl font-bold text-green-800 mb-3">
                 Sustainable
               </h3>
               <p className="text-gray-600">
@@ -177,7 +177,7 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">☕</span>
               </div>
-              <h3 className="text-xl font-bold text-amber-900 mb-3">
+              <h3 className="text-xl font-bold text-green-800 mb-3">
                 Quality
               </h3>
               <p className="text-gray-600">
@@ -189,7 +189,7 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🤝</span>
               </div>
-              <h3 className="text-xl font-bold text-amber-900 mb-3">
+              <h3 className="text-xl font-bold text-green-800 mb-3">
                 Service
               </h3>
               <p className="text-gray-600">
@@ -201,9 +201,9 @@ export default function AboutPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-amber-50">
+      <section className="py-16 bg-green-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">
             Ready to transform your workplace?
           </h2>
           <p className="text-xl text-gray-700 mb-8">
@@ -213,7 +213,7 @@ export default function AboutPage() {
             <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
               Contact Us Today
             </Button>
-            <Button size="lg" variant="outline" className="text-amber-800 border-amber-800 hover:bg-amber-800 hover:text-white px-8 py-3">
+            <Button size="lg" variant="outline" className="text-green-800 border-green-800 hover:bg-green-800 hover:text-white px-8 py-3">
               Schedule a Tasting
             </Button>
           </div>

@@ -4,33 +4,33 @@ import { Button } from "@/components/ui/button";
 const services = [
   {
     title: "Our Coffee",
-    subtitle: "Find out more",
+    subtitle: "Discover our range",
     image: "https://ext.same-assets.com/304612688/758263681.webp",
-    link: "/puro-coffee/",
+    link: "/coffee",
   },
   {
     title: "Our Machines",
-    subtitle: "Find a machine",
+    subtitle: "Find your machine",
     image: "https://ext.same-assets.com/304612688/3132776536.webp",
-    link: "/coffee-machines-for-business/",
+    link: "/machines",
   },
   {
-    title: "Coffee Shop",
-    subtitle: "Buy supplies",
+    title: "Coffee Tasting",
+    subtitle: "Book a session",
     image: "https://ext.same-assets.com/304612688/3120748658.webp",
-    link: "/shop/",
+    link: "/coffee/tasting",
   },
 ];
 
 export default function ServiceGrid() {
   return (
-    <section className="py-16 bg-stone-50">
+    <section className="py-16 bg-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-amber-900 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-800 mb-4">
             What are you looking
           </h2>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-amber-900">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-800">
             for today?
           </h2>
         </div>

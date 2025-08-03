@@ -11,13 +11,13 @@ const machineTypes = [
     image: "https://ext.same-assets.com/176798368/894159796.webp",
   },
   {
-    title: "Professional",
-    description: "Commercial coffee machines that can handle the rush.",
+    title: "Commercial",
+    description: "Professional coffee machines that can handle the rush.",
     link: "/machines/commercial",
     image: "https://ext.same-assets.com/176798368/1638910467.webp",
   },
   {
-    title: "Water",
+    title: "Filtered Water",
     description: "Hot and cold filtered water on demand, perfect for hot tea and cold drinks.",
     link: "/machines/water",
     image: "https://ext.same-assets.com/176798368/2351809614.webp",
@@ -32,7 +32,7 @@ const quickLinks = [
     image: "https://ext.same-assets.com/176798368/2446004184.webp",
   },
   {
-    title: "Professional Machines",
+    title: "Commercial Machines",
     subtitle: "View our range",
     link: "/machines/commercial",
     image: "https://ext.same-assets.com/176798368/4007591754.webp",
@@ -44,13 +44,13 @@ const quickLinks = [
     image: "https://ext.same-assets.com/176798368/1092627970.webp",
   },
   {
-    title: "Coffee Shop",
-    subtitle: "Shop now",
-    link: "/shop",
+    title: "Coffee Range",
+    subtitle: "Discover more",
+    link: "/coffee",
     image: "https://ext.same-assets.com/176798368/1752043403.webp",
   },
   {
-    title: "Brita Water",
+    title: "Filtered Water",
     subtitle: "Stay hydrated",
     link: "/machines/water",
     image: "https://ext.same-assets.com/176798368/2990761560.webp",
@@ -89,7 +89,7 @@ export default function MachinesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-4">
               What are you looking for?
             </h2>
           </div>
@@ -125,7 +125,7 @@ export default function MachinesPage() {
       </section>
 
       {/* Quick Links Grid */}
-      <section className="py-16 bg-stone-50">
+      <section className="py-16 bg-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {quickLinks.map((link, index) => (
@@ -135,83 +135,4 @@ export default function MachinesPage() {
                     <img
                       src={link.image}
                       alt={link.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all" />
-                    <div className="absolute inset-0 flex flex-col justify-end p-6">
-                      <h3 className="text-xl font-bold text-white mb-2">
-                        {link.title}
-                      </h3>
-                      <p className="text-white text-sm">
-                        {link.subtitle}
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Content Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-6">
-              Hardworking coffee machines
-            </h2>
-          </div>
-
-          <div className="prose prose-lg max-w-none">
-            <h3 className="text-2xl font-bold text-amber-900 mb-4">
-              Looking for Coffee Machines for Your Business?
-            </h3>
-            <p className="text-gray-700 mb-6">
-              We have you covered if you run a coffee shop, hotel, restaurant, or any establishment where you must serve hot drinks daily. Our range of commercial coffee machines for business can provide superior quality espresso-based drinks that will impress your customers.
-            </p>
-
-            <h3 className="text-2xl font-bold text-amber-900 mb-4">
-              Exceptional Coffee Quality Guaranteed
-            </h3>
-            <p className="text-gray-700 mb-6">
-              We understand the importance of serving top-notch coffee that meets your customers expectations. Our coffee machines for business can help you achieve that by brewing coffee from the finest beans with the right equipment. With our machines, you can deliver high-quality coffee in large quantities, ensuring customer satisfaction and loyalty.
-            </p>
-
-            <h3 className="text-2xl font-bold text-amber-900 mb-4">
-              Robust and High-Quality Machines
-            </h3>
-            <p className="text-gray-700 mb-6">
-              Our machines are built to cope with high demand and are robust enough to serve between 50-500 cups daily. You can trust our machines to deliver the best coffee every time, no matter how many cups you need to serve.
-            </p>
-
-            <h3 className="text-2xl font-bold text-amber-900 mb-4">
-              Easy Maintenance and Hassle-Free Service
-            </h3>
-            <p className="text-gray-700 mb-6">
-              We know that you need a reliable, no-hassle service with machines that require minimal maintenance. Our in-house service arrangements ensure that any issues can be fixed quickly, and a guarantee covers you. With our water machines equipped with hot and cold filtered taps, you can efficiently serve piping hot tea and ice-cold drinks.
-            </p>
-
-            <h3 className="text-2xl font-bold text-amber-900 mb-4">
-              Expert Advice and Support
-            </h3>
-            <p className="text-gray-700 mb-6">
-              Our helpful team of experts can guide you through selecting suitable coffee machines for your business. We can help you determine how many machines you need, how many cups of coffee you need to serve daily, and what drinks you want to offer. You can count on us for the best advice and support.
-            </p>
-
-            <h3 className="text-2xl font-bold text-amber-900 mb-4">
-              Ethically Sourced Coffees
-            </h3>
-            <p className="text-gray-700 mb-6">
-              Our coffee machines for business are complemented by our extensive selection of ethically sourced coffees roasted in-house. With our machines and ethically sourced coffees, you can serve coffee that will rival the finest coffee houses.
-            </p>
-
-            <p className="text-gray-700 text-center text-lg font-medium">
-              Contact us today and see how we can help you take your business to the next level with our coffee machines for business.
-            </p>
-          </div>
-        </div>
-      </section>
-    </Layout>
-  );
-}
+                      className="

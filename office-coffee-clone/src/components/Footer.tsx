@@ -3,56 +3,46 @@ import { Facebook, Instagram, Twitter, Phone } from "lucide-react";
 
 const footerSections = [
   {
-    title: "Coffee Shop",
-    links: [
-      { label: "Coffee", href: "/shop/coffee/" },
-      { label: "Tea", href: "/shop/tea/" },
-      { label: "Biscuits", href: "/shop/biscuits/" },
-      { label: "Cups", href: "/shop/cups/" },
-      { label: "Sundries", href: "/shop/sundries/" },
-    ],
-  },
-  {
     title: "Machines",
     links: [
-      { label: "Office", href: "/office-coffee-machines/" },
-      { label: "Commercial", href: "/commercial-coffee-machines/" },
-      { label: "Water", href: "/filtered-water-coolers/" },
+      { label: "Office Coffee", href: "/machines/office" },
+      { label: "Commercial", href: "/machines/commercial" },
+      { label: "Filtered Water", href: "/machines/water" },
     ],
   },
   {
     title: "Coffee",
     links: [
-      { label: "Puro", href: "/puro-coffee/#puro-coffee" },
-      { label: "Origins", href: "/puro-coffee/#office-origins-coffee" },
-      { label: "Tasting", href: "/modalform/enquiry/tasting" },
+      { label: "Puro Coffee", href: "/coffee/puro" },
+      { label: "Office Origins", href: "/coffee/origins" },
+      { label: "Coffee Tasting", href: "/coffee/tasting" },
     ],
   },
   {
     title: "About",
     links: [
-      { label: "Our Story", href: "/about/" },
-      { label: "Environment", href: "/environment-puro/" },
-      { label: "News", href: "/blog/" },
+      { label: "Our Story", href: "/about/story" },
+      { label: "Environment", href: "/about/environment" },
+      { label: "News & Blog", href: "/about/news" },
     ],
   },
   {
     title: "Contact",
     links: [
-      { label: "Head Office", href: "/cheltenham/" },
-      { label: "Scotland", href: "/glasgow/" },
-      { label: "North", href: "/sheffield/" },
-      { label: "South West & Wales", href: "/exeter/" },
-      { label: "Cornwall", href: "/redruth/" },
+      { label: "Head Office", href: "/contact/cheltenham" },
+      { label: "Scotland", href: "/contact/scotland" },
+      { label: "North", href: "/contact/north" },
+      { label: "South West & Wales", href: "/contact/south-west-wales" },
+      { label: "Cornwall", href: "/contact/cornwall" },
     ],
   },
   {
     title: "Service",
     links: [
-      { label: "Returns", href: "/terms/returns-policy/" },
-      { label: "Terms", href: "/terms/" },
-      { label: "Privacy", href: "/terms/privacy-policy/" },
-      { label: "Cookies", href: "/terms/cookie-policy/" },
+      { label: "Returns Policy", href: "/terms/returns" },
+      { label: "Terms & Conditions", href: "/terms" },
+      { label: "Privacy Policy", href: "/terms/privacy" },
+      { label: "Cookie Policy", href: "/terms/cookies" },
     ],
   },
 ];
@@ -82,13 +72,13 @@ const certificationLogos = [
 
 export default function Footer() {
   return (
-    <footer className="bg-stone-100">
+    <footer className="bg-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
           {footerSections.map((section, index) => (
             <div key={index}>
-              <h3 className="font-bold text-amber-900 text-sm uppercase tracking-wide mb-4">
+              <h3 className="font-bold text-green-800 text-sm uppercase tracking-wide mb-4">
                 {section.title}
               </h3>
               <ul className="space-y-2">
@@ -96,7 +86,7 @@ export default function Footer() {
                   <li key={linkIndex}>
                     <Link
                       href={link.href}
-                      className="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+                      className="text-gray-600 hover:text-green-700 text-sm transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -108,26 +98,26 @@ export default function Footer() {
         </div>
 
         {/* Company Info Section */}
-        <div className="border-t border-gray-200 pt-12 mb-12">
+        <div className="border-t border-green-200 pt-12 mb-12">
           <div className="flex flex-col lg:flex-row justify-between items-start">
             <div className="mb-8 lg:mb-0 lg:max-w-md">
               <div className="h-12 flex items-center mb-6">
-                <span className="text-2xl font-bold text-amber-900">Office Coffee Co.</span>
+                <span className="text-2xl font-bold text-green-800">Office Coffee Co.</span>
               </div>
-              <h3 className="text-2xl font-bold text-amber-900 mb-4">
+              <h3 className="text-2xl font-bold text-green-800 mb-4">
                 Incredible coffee fuels great working culture
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 We help businesses boost morale and increase productivity with our
                 state of the art coffee machines, regularly supplied with Fairtrade
-                coffee.
+                coffee that protects rainforests and supports farming communities.
               </p>
             </div>
 
             <div className="flex flex-col items-start lg:items-end">
               <Link
                 href="tel:02037634035"
-                className="flex items-center text-xl font-bold text-amber-900 mb-6"
+                className="flex items-center text-xl font-bold text-green-800 mb-6 hover:text-green-600 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
                 0203 763 4035
@@ -136,19 +126,19 @@ export default function Footer() {
               <div className="flex space-x-4">
                 <Link
                   href="https://www.facebook.com/OfficeCoffeeCo/"
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-gray-600 hover:text-green-700 transition-colors"
                 >
                   <Facebook className="h-5 w-5" />
                 </Link>
                 <Link
                   href="https://www.instagram.com/officecoffeeco/"
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-gray-600 hover:text-green-700 transition-colors"
                 >
                   <Instagram className="h-5 w-5" />
                 </Link>
                 <Link
                   href="https://twitter.com/OfficeCoffeeCo/"
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-gray-600 hover:text-green-700 transition-colors"
                 >
                   <Twitter className="h-5 w-5" />
                 </Link>
@@ -158,7 +148,7 @@ export default function Footer() {
         </div>
 
         {/* Certification Logos */}
-        <div className="border-t border-gray-200 pt-8 mb-8">
+        <div className="border-t border-green-200 pt-8 mb-8">
           <div className="flex flex-wrap justify-center gap-6">
             {certificationLogos.map((cert, index) => (
               <Link
@@ -179,7 +169,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-200 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-600">
+        <div className="border-t border-green-200 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-600">
           <p>Copyright © 2025 Office Coffee Company All rights reserved</p>
           <div className="flex items-center mt-4 sm:mt-0">
             <span className="mr-2">Design by</span>
@@ -187,7 +177,7 @@ export default function Footer() {
               href="https://www.vii.co.uk"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium hover:text-gray-900"
+              className="font-medium hover:text-green-700 transition-colors"
             >
               VII
             </Link>

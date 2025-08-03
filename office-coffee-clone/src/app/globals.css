@@ -69,29 +69,62 @@
   }
 }
 
-/* Custom styles for Office Coffee Company */
-.text-coffee-brown {
-  color: #3c2f27;
+/* Updated custom styles for Office Coffee Company - Green Color Scheme */
+.text-coffee-primary {
+  color: #16a34a; /* Green-600 */
 }
 
-.text-coffee-medium {
-  color: #855c45;
+.text-coffee-dark {
+  color: #15803d; /* Green-700 */
 }
 
 .text-coffee-light {
-  color: #9c7e5e;
+  color: #22c55e; /* Green-500 */
+}
+
+.text-coffee-accent {
+  color: #166534; /* Green-800 */
 }
 
 .bg-coffee-cream {
-  background-color: #f4f4f0;
+  background-color: #f0fdf4; /* Green-50 */
 }
 
-.bg-coffee-brown {
-  background-color: #3c2f27;
+.bg-coffee-primary {
+  background-color: #16a34a; /* Green-600 */
 }
 
-.bg-coffee-green {
-  background-color: #10a83d;
+.bg-coffee-dark {
+  background-color: #15803d; /* Green-700 */
+}
+
+.bg-coffee-light {
+  background-color: #dcfce7; /* Green-100 */
+}
+
+.bg-coffee-accent {
+  background-color: #166534; /* Green-800 */
+}
+
+.border-coffee-primary {
+  border-color: #16a34a; /* Green-600 */
+}
+
+/* Hover states for green theme */
+.hover\:text-coffee-primary:hover {
+  color: #16a34a;
+}
+
+.hover\:bg-coffee-primary:hover {
+  background-color: #16a34a;
+}
+
+.hover\:bg-coffee-dark:hover {
+  background-color: #15803d;
+}
+
+.hover\:border-coffee-primary:hover {
+  border-color: #16a34a;
 }
 
 /* Smooth transitions */
@@ -101,7 +134,7 @@
   transition-duration: 150ms;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar with green theme */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -111,10 +144,44 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #9c7e5e;
+  background: #22c55e;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #855c45;
+  background: #16a34a;
+}
+
+/* Mega menu styles */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 3px solid #16a34a;
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 50;
+}
+
+.mega-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Prevent mega menu overlap */
+.mega-menu-container {
+  position: relative;
+}
+
+.mega-menu-trigger:hover + .mega-menu,
+.mega-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }

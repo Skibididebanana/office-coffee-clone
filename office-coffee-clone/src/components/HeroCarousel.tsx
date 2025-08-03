@@ -13,24 +13,24 @@ const slides = [
     highlight1: "barista-quality machines",
     highlight2: "ethically sourced beans,",
     description: "for your workplace.",
-    buttonText: "coffee machines",
-    buttonLink: "/office-coffee-machines/",
+    buttonText: "Coffee machines",
+    buttonLink: "/machines",
   },
   {
     id: 2,
     image: "https://ext.same-assets.com/304612688/2685718521.webp",
-    title: "Fairtrade coffee and supplies, with next business day delivery",
-    subtitle: "Freshly roasted delicious coffee for your coffee machine.",
-    buttonText: "Coffee shop",
-    buttonLink: "/shop/",
+    title: "Fairtrade coffee that protects rainforests",
+    subtitle: "Freshly roasted delicious coffee from sustainable sources.",
+    buttonText: "Our coffee",
+    buttonLink: "/coffee",
   },
   {
     id: 3,
     image: "https://ext.same-assets.com/304612688/1853671973.webp",
     title: "Organise a coffee tasting for your colleagues",
     subtitle: "Host an obligation free coffee morning to sample our delicious blends and reliable machines",
-    buttonText: "Coffee machines",
-    buttonLink: "/office-coffee-machines/",
+    buttonText: "Book tasting",
+    buttonLink: "/coffee/tasting",
   },
 ];
 
@@ -80,11 +80,11 @@ export default function HeroCarousel() {
                   )}
                   {slide.highlight1 && (
                     <p className="text-lg md:text-xl text-white mb-2">
-                      <span className="bg-white bg-opacity-20 px-2 py-1 rounded">
+                      <span className="bg-green-600 bg-opacity-80 px-2 py-1 rounded">
                         {slide.highlight1}
                       </span>{" "}
                       and{" "}
-                      <span className="bg-white bg-opacity-20 px-2 py-1 rounded">
+                      <span className="bg-green-600 bg-opacity-80 px-2 py-1 rounded">
                         {slide.highlight2}
                       </span>
                     </p>

@@ -57,21 +57,21 @@ export default function CoffeePage() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-r from-amber-900 to-amber-700">
+      <section className="relative py-24 bg-gradient-to-r from-green-800 to-green-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
                 Exceptional Coffee for Your Business
               </h1>
-              <p className="text-xl text-amber-100 mb-8">
+              <p className="text-xl text-green-100 mb-8">
                 From bean to cup, we're passionate about delivering the finest Fairtrade and organic coffee that not only tastes incredible but makes a positive impact on the world.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
+                <Button size="lg" className="bg-green-600 hover:bg-green-500 text-white px-8 py-3">
                   Explore Our Coffee
                 </Button>
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-amber-900 px-8 py-3">
+                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-green-800 px-8 py-3">
                   Book a Tasting
                 </Button>
               </div>
@@ -91,7 +91,7 @@ export default function CoffeePage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-4">
               Our Coffee Ranges
             </h2>
             <p className="text-xl text-gray-700">
@@ -111,7 +111,7 @@ export default function CoffeePage() {
                   <div className="absolute inset-0 bg-black bg-opacity-30" />
                 </div>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-amber-900 mb-2">
+                  <h3 className="text-2xl font-bold text-green-800 mb-2">
                     {range.title}
                   </h3>
                   <h4 className="text-lg font-semibold text-gray-700 mb-4">
@@ -129,7 +129,7 @@ export default function CoffeePage() {
                     ))}
                   </div>
                   <Link href={range.link}>
-                    <Button className="w-full bg-amber-800 hover:bg-amber-900 text-white">
+                    <Button className="w-full bg-green-800 hover:bg-green-900 text-white">
                       Learn More
                     </Button>
                   </Link>
@@ -144,7 +144,7 @@ export default function CoffeePage() {
       <section className="py-16 bg-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-4">
               Coffee That Makes a Difference
             </h2>
             <p className="text-xl text-gray-700">
@@ -156,7 +156,7 @@ export default function CoffeePage() {
             {sustainability.map((item, index) => (
               <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold text-amber-900 mb-3">
+                <h3 className="text-xl font-bold text-green-800 mb-3">
                   {item.title}
                 </h3>
                 <p className="text-gray-600">
@@ -169,14 +169,14 @@ export default function CoffeePage() {
       </section>
 
       {/* Coffee Tasting Section */}
-      <section className="py-16 bg-amber-900 text-white">
+      <section className="py-16 bg-green-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Experience Our Coffee Firsthand
               </h2>
-              <p className="text-xl text-amber-100 mb-8">
+              <p className="text-xl text-green-100 mb-8">
                 Book a coffee tasting session and discover the perfect coffee solution for your business. Our experts will guide you through our ranges and help you find the ideal match.
               </p>
               <ul className="space-y-3 mb-8">
@@ -188,7 +188,7 @@ export default function CoffeePage() {
                 ))}
               </ul>
               <Link href="/coffee/tasting">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
+                <Button size="lg" className="bg-green-600 hover:bg-green-500 text-white px-8 py-3">
                   Book Your Tasting
                 </Button>
               </Link>
@@ -207,7 +207,7 @@ export default function CoffeePage() {
       {/* Quality Promise */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">
             Our Quality Promise
           </h2>
           <div className="prose prose-lg max-w-none text-gray-700">
@@ -216,15 +216,15 @@ export default function CoffeePage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
               <div>
-                <h3 className="text-xl font-bold text-amber-900 mb-3">Expertly Sourced</h3>
+                <h3 className="text-xl font-bold text-green-800 mb-3">Expertly Sourced</h3>
                 <p>Direct relationships with farmers across 8 countries ensure the highest quality beans.</p>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-amber-900 mb-3">Perfectly Roasted</h3>
+                <h3 className="text-xl font-bold text-green-800 mb-3">Perfectly Roasted</h3>
                 <p>Small-batch roasting in our UK facilities guarantees optimal flavor in every cup.</p>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-amber-900 mb-3">Freshly Delivered</h3>
+                <h3 className="text-xl font-bold text-green-800 mb-3">Freshly Delivered</h3>
                 <p>Regular deliveries ensure your office always has the freshest, most delicious coffee.</p>
               </div>
             </div>
@@ -233,9 +233,9 @@ export default function CoffeePage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-stone-50">
+      <section className="py-16 bg-green-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">
             Ready to Elevate Your Coffee Experience?
           </h2>
           <p className="text-xl text-gray-700 mb-8">
@@ -247,9 +247,9 @@ export default function CoffeePage() {
                 Get Started Today
               </Button>
             </Link>
-            <Link href="/shop/coffee">
-              <Button size="lg" variant="outline" className="text-amber-800 border-amber-800 hover:bg-amber-800 hover:text-white px-8 py-3">
-                Shop Coffee Online
+            <Link href="/coffee/tasting">
+              <Button size="lg" variant="outline" className="text-green-800 border-green-800 hover:bg-green-800 hover:text-white px-8 py-3">
+                Schedule a Tasting
               </Button>
             </Link>
           </div>
