@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   distDir: 'out',
+  trailingSlash: true,  // ADD THIS LINE
   allowedDevOrigins: ["*.preview.same-app.com"],
   images: {
     unoptimized: true,
